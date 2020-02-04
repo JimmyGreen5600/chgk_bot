@@ -2,7 +2,7 @@
 ./parse.py > quest.txt
 file="quest.txt"
 IFS=$'\n'
-for var in $(cat $file)
+while read example
 do
-./script.sh "$(cat $file)"
-done
+./script.sh $example
+done < quest.txt
