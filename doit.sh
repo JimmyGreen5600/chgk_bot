@@ -1,6 +1,7 @@
 #!/bin/bash
 ./parse.py > quest.txt
 file="quest.txt"
+./try.sh
 IFS=$'\n'
 while read example
 do
